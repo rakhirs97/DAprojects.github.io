@@ -47,7 +47,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: var(--primary) !important;
+  color: #B8FB3C !important; /* Lime green */
   font-weight: 600;
 }
 
