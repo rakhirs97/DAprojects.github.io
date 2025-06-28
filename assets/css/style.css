@@ -34,10 +34,12 @@
   box-sizing: border-box; }
 
 html {
-  font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
@@ -47,31 +49,36 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* optional subtle shadow */
 }
-body {
+.navbar-nav {
+  gap: 1.5rem; /* Even spacing between nav items */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #000; /* Ensures nav text is black */
   font-family: 'Poppins', sans-serif;
 }
-.navbar .nav-link {
-  color: #000;
-  font-weight: 500;
-}
-
-/* Hover underline effect (reuse if you already added this) */
-.navbar .nav-link::after {
+.nav-link::after {
   content: '';
   position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
+  width: 50%; /* Half the width of the text */
+  height: 6px;
+  bottom: -4px;
+  left: 25%; /* Centers the underline */
   background-color: #000;
+  border-radius: 3px;
   transition: width 0.3s ease-in-out;
 }
-
-.navbar .nav-link:hover::after,
-.navbar .nav-link.active::after {
-  width: 100%;
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 50%;
 }
-
+.nav-link.active {
+  color: #000 !important;
+}
 /* Background color for landing */
 body {
   margin: 0;
