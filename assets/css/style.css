@@ -73,7 +73,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   position: absolute;
   width: 0;
   height: 6px;
-  bottom: -6px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #000;
