@@ -82,5 +82,18 @@ body {
   text-align: left;
  }
 
-[tabindex="-1"]:focus {
-  outline: 0 !important; }
+#home-section {
+  min-height: 100vh;
+  background-color: var(--dark); /* or #000 if not using the variable */
+  color: var(--hero-text-color);
+  padding-top: 80px; /* leave space for fixed navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#home-section .highlight {
+  color: var(--hero-accent-color); /* your lime green */
+  font-weight: 600;
+}
